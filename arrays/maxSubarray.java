@@ -16,7 +16,7 @@ package dsa.arrays;
 public class maxSubarray {
     public static void main(String args[])
     {
-        int[] arr = {-6,-1,-8};
+        int[] arr = {1,-2,3,-1,2};
         maxsum(arr,arr.length);
         maxsum1(arr,arr.length);
     }
