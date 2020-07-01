@@ -11,16 +11,18 @@ package dsa.recursion;
  */
 //subsets of a given string
 public class recursion7 {
-    public static void main(String args[]){
+
+    public static void main(String args[]) {
         String s = "ab";
-        subset(s,"",0);
+        subset(s, "", 0);
     }
-    static void subset(String s,String b,int n){
-       if(n==s.length()){
-           System.out.print(b+" ");
-           return;
-       }
-       subset(s,b,n+1);
-       subset(s,b+s.charAt(n),n+1);
+
+    static void subset(String s, String b, int n) {
+        if (n == s.length()) {
+            System.out.print(b + " ");     
+            return;
+        }
+        subset(s, b, n + 1);
+        subset(s, b + s.charAt(n), n + 1);
     }
 }

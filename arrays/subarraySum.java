@@ -29,7 +29,7 @@ public class subarraySum {
             {
                 sum+=a[j];
                 if(sum == s)
-                    System.out.println("yes");
+                    System.out.println(i + " " + j);
             }
         }
     }
